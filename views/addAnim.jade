@@ -1,0 +1,87 @@
+extends layout
+
+block content
+
+  style
+    a {
+      text-decoration:underline;
+      color:#00F;
+      cursor:pointer;
+    }
+    #sheepItForm_controls div, #sheepItForm_controls div input {
+      float:left;
+      margin-right: 10px;
+    }
+
+  h1= title
+
+
+  form(id="appForm", name="appForm", method="post", action="../animations")
+    label Animation Name:
+    input#animName(class="simple-input", name="appName", type="text")
+    div#sheepItForm
+      div#sheepItForm_template
+
+        label(for="sheepItForm_#index#_headcolor") Head Color&nbsp;
+          span(id="sheepItForm_label")
+        select(id="sheepItForm_#index#_headcolor",name="seq_head_color_#index#")
+          option(selected="true", value="none") none
+          option( value="white") white
+          option( value="cyan") cyan
+          option( value="purple") purple
+          option( value="blue") blue
+          option( value="yellow") yellow
+          option( value="green") green
+          option( value="red") red
+
+        label(for="sheepItForm_#index#_heart") Heart&nbsp;
+          span(id="sheepItForm_label")
+        input(id="sheepItForm_#index#_heart", class="simple-input", name="seq_heart_#index#", type="checkbox")
+
+        label(for="sheepItForm_#index#_wings") Wings&nbsp;
+          span(id="sheepItForm_label")
+        input(id="sheepItForm_#index#_wings", class="simple-input", name="seq_wings_#index#", type="checkbox")
+
+        label(for="sheepItForm_#index#_left") Left&nbsp;
+          span(id="sheepItForm_label")
+        input(id="sheepItForm_#index#_left", class="simple-input", name="seq_left_#index#", type="checkbox")
+
+        label(for="sheepItForm_#index#_right") Right&nbsp;
+          span(id="sheepItForm_label")
+        input(id="sheepItForm_#index#_right", class="simple-input", name="seq_right_#index#", type="checkbox")
+
+        label(for="sheepItForm_#index#_timeout") TimeOut&nbsp;
+          span(id="sheepItForm_label")
+        input(id="sheepItForm_#index#_timeout", class="simple-input", name="seq_timeout_#index#", type="number", min=100, max=60000, step=1, value=700)
+
+
+        a(id="sheepItForm_remove_current")
+          img(class="delete", src="../../images/cross.png", width="16", height="16", border="0")
+
+      div#sheepItForm_noforms_template No rules
+
+      br
+      br
+      div#sheepItForm_controls
+        div#sheepItForm_add
+          a(class="modern")
+            span Add rule
+        div#sheepItForm_remove_last
+          a(class="modern")
+            span Remove
+        div#sheepItForm_remove_all
+          a(class="modern")
+            span Remove all
+        div#sheepItForm_add_n
+          input(id="sheepItForm_add_n_input", class="simple-input", type="text", size="4", style="margin-top:11px;height:30px;font-size:large;")
+          div#sheepItForm_add_n_button
+            a(class="modern")
+              span Add
+
+    br
+    br
+    input(type="submit", class="modern", value="Save Animation")
+
+block libraries
+  script(src='../../javascripts/jquery.sheepItPlugin-1.1.1.min.js')
+  script(src='../../javascripts/addAnim.js')
