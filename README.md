@@ -4,9 +4,9 @@ node-buddy
 node-buddy allows to manage a i-buddy device using a node.js application.
 
 
-Steps:
+###Steps:
 
-#Check Configuration Values:
+####Check Configuration Values:
 
 ```json
 {
@@ -22,6 +22,15 @@ Steps:
         "animCollection": "animations"
     }
 }
-
 ```
+
+####Install dependencies:
+
+        $ npm install
+
+####Start the server:
+    
+        $ node app
+
+
 
