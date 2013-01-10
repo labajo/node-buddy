@@ -3,6 +3,7 @@ node-buddy
 
 node-buddy allows to manage a i-buddy device using a node.js application.
 
+Tested on Mac OS X 10.7.5 and node v0.8.16 x64.
 
 ###Steps:
 
