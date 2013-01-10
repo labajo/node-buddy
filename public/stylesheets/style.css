@@ -6,3 +6,17 @@ body {
 a {
   color: #00B7FF;
 }
+
+.simple-input {
+    border: 2px solid #EBD292;
+    border-radius: 5px;
+    color: #333;
+    transition: all 0.3s ease-out;
+}
+
+.simple-input:hover { border-radius: 5px; }
+.simple-input:focus {
+    outline: none;
+    border-radius: 5px;
+    border-color: #F1B720;
+}

@@ -1,12 +1,24 @@
 {
-  "name": "application-name",
-  "version": "0.0.1",
-  "private": true,
-  "scripts": {
-    "start": "node app"
-  },
-  "dependencies": {
-    "express": "3.0.6",
-    "jade": "*"
-  }
+    "name": "node-buddy",
+    "version": "0.0.2",
+    "private": true,
+    "scripts": {
+        "start": "node app"
+    },
+    "author": {
+        "name": "labajo"
+    },
+    "repository": {
+        "type": "git",
+        "url": "http://github.com/labajo/node-buddy.git"
+    },
+    "dependencies": {
+        "express": "3.0.6",
+        "jade": "*",
+        "mongodb":"1.2.8",
+        "nconf":"0.6.7",
+        "node-hid":"0.1.1",
+        "sync":"0.2.1",
+        "winston":"0.6.2"
+    }
 }
