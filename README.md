@@ -29,8 +29,13 @@ node-buddy allows to manage a i-buddy device using a node.js application.
         $ npm install
 
 ####Start the server:
-    
+
         $ node app
+
+####Use the following endpoints:
+    * Main web [http://localhost:3000/web/animations](http://localhost:3000/web/animations)
+    * Create a new animation [http://localhost:3000/web/animations/add](http://localhost:3000/web/animations/add)
+    * Play animation in your i-buddy [http://localhost:3000/animations/{animationName}](http://localhost:3000/animations/{animationName})
 
 
 
