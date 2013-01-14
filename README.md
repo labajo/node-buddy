@@ -37,6 +37,7 @@ Tested on Mac OS X 10.7.5 and node v0.8.16 x64.
 
   * Main web [http://localhost:3000/web/animations](http://localhost:3000/web/animations)
   * Create a new animation [http://localhost:3000/web/animations/add](http://localhost:3000/web/animations/add)
+  ![Animation Portal](http://img46.imageshack.us/img46/5946/googlechromes.png)
   * Play animation in your i-buddy [http://localhost:3000/animations/{animationName}](http://localhost:3000/animations/{animationName})
 
 
