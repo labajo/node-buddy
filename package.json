@@ -2,9 +2,6 @@
     "name": "node-buddy",
     "version": "0.0.2",
     "private": true,
-    "scripts": {
-        "start": "node app"
-    },
     "author": {
         "name": "labajo"
     },
@@ -20,5 +17,12 @@
         "node-hid":"0.1.1",
         "sync":"0.2.1",
         "winston":"0.6.2"
+    },
+    "devDependencies": {
+        "mocha": "latest"
+    },
+    "scripts": {
+        "test": "make test",
+        "start": "node app"
     }
 }
