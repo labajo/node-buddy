@@ -41,6 +41,9 @@ Tested on Mac OS X 10.7.5 and node v0.8.16 x64.
   * Play animation in your i-buddy [http://localhost:3000/animations/{animationName}](http://localhost:3000/animations/{animationName})
 
 
+####Status:
+[![Build Status](https://travis-ci.org/labajo/node-buddy.png)](undefined)
+
 ####Device:
 
   ![iBuddy](http://img197.imageshack.us/img197/5859/demont.png)
