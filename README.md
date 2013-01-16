@@ -42,7 +42,7 @@ Tested on Mac OS X 10.7.5 and node v0.8.16 x64.
 
 
 ####Status:
-[![Build Status](https://travis-ci.org/labajo/node-buddy.png)](undefined)
+[![Build Status](https://travis-ci.org/labajo/node-buddy.png)](https://travis-ci.org/labajo/node-buddy)
 
 ####Device:
 
